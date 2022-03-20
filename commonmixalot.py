@@ -169,7 +169,7 @@ def _ExportFbxInternal(fbxFilePath: str):
     Exports the current scene with the right settings for O3DE.
     @fbxFilePath A fully qualified file path, suitable for file exporting.
     """
-    bpy.ops.export_scene.fbx(filepath=fbxFilePath, check_existing=False, axis_forward='-Y', axis_up='Z')#, path_mode='COPY')
+    bpy.ops.export_scene.fbx(filepath=fbxFilePath, check_existing=False, axis_forward='Y', axis_up='Z')#, path_mode='COPY')
     print(f"FBX file '{fbxFilePath}' was exported successfully")
 
 
